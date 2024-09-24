@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Maniulation</title>
+  </head>
+  <body>
+    <script>
+      const persons = [
+        { firstname: "Malcom", lastname: "Reynolds" },
+        { firstname: "Kaylee", lastname: "Frye" },
+        { firstname: "Jayne", lastname: "Cobb" },
+      ];
+
+      // arrow function & object conditional
+      persons.map((item) => {
+        if (item.firstname.length > 5) {
+          console.log([item.firstname, item.lastname].join(" ").toUpperCase()); //array method & string manipulation
+        }
+      });
+    </script>
+  </body>
+</html>
